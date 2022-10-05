@@ -1,15 +1,12 @@
 export type TurmaDB = {
    id: string,
-   user_id: string,
-   product_id: string,
-   quantity: number,
-   total_price: number
+   nome: string,
+   modulo: string
 }
 
-export class TurmaModel {
+export class Turma {
    constructor(
       private id: string,
-      private turma_id: number,
       private nome: string,
       private modulo: string
    ) { }
@@ -22,8 +19,5 @@ export class TurmaModel {
    }
    public getModulo(): string {
       return this.modulo
-   }
-   public getTurma_id(): number{
-      return this.turma_id
    }
 }
