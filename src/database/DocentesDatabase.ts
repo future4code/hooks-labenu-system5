@@ -30,4 +30,25 @@ export class DocenteDatabase extends BaseDatabase {
       throw new Error("Erro inesperado");
     }
   }
+
+  public async getAllDocentes(){
+    try {
+      const result = await BaseDatabase.connection("Docente")
+      .select()
+      return result
+    } catch (error: any) {
+      throw new Error("Erro inesperado, verificar requisição")
+    }
+  }
+
+  public async mudarDocenteTurma(id: number, turma_id: string) {
+    try {
+        await BaseDatabase.connection("Docente")
+        .update({
+            turma_id: turma_id
+        }).where("id", id)
+    } catch (error: any) {
+        throw new Error("Erro inesperado, verificar informações passadas")
+    }
+}
 }

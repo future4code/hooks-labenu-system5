@@ -23,15 +23,33 @@ Content-Type: application/json
 
 
 ### Criar Estudante
-POST http://localhost:3003/estudante
+PUT http://localhost:3003/estudante
 Content-Type: application/json
 
 {
-    "nome": "Pitu",
-    "email": "pitu@email.com",
-    data_nasc: "2000-01-01",
-    turma_id: "1",
-    hobbies_id: ["1", "3"]
+    "nome": "Victor",
+    "email": "victor@gmail.com",
+    "data_nasc": "2000-01-01",
+    "turma_id": "1",
+    "hobbies_id": ["1"]
+}
+
+
+### Buscar todos os Estudantes
+GET http://localhost:3003/all/estudantes
+
+### Pegar idade aluno por id
+GET http://localhost:3003/estudante-idade/1
+
+### Buscar estudante por nome
+GET http://localhost:3003/estudante?nome=Ravenna
+
+### 
+PUT http://localhost:3003/estudante/001 
+Content-Type: application/json
+
+{
+"turma_id": "1664998876770"
 }
 
 ### Criar Docente
@@ -41,10 +59,18 @@ Content-Type: application/json
 {
     "nome": "Lito",
     "email": "litu@gmail.com",
-    data_nasc: "2009-01-01",
-    turma_id: "2",
-    especialidades_id: ["2", "5"]
+    "data_nasc": "2009-01-01",
+    "turma_id": "2",
+    "especialidades_id": ["2", "5"]
 }
 
-### Pegar idade aluno por id
-GET http://localhost:3003/estudante-idade/1
+### Mudar docente de turma
+PUT http://localhost:3003/docente/001 
+Content-Type: application/json
+
+{
+"turma_id": "1664998876770"
+}
+
+### Buscar todos os Docentes
+GET http://localhost:3003/all/docentes
