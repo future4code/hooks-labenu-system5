@@ -20,3 +20,31 @@ Content-Type: application/json
 {
 "modulo": "2"
 }
+
+
+### Criar Estudante
+POST http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "nome": "Pitu",
+    "email": "pitu@email.com",
+    data_nasc: "2000-01-01",
+    turma_id: "1",
+    hobbies_id: ["1", "3"]
+}
+
+### Criar Docente
+POST http://localhost:3003/especialidade
+Content-Type: application/json
+
+{
+    "nome": "Lito",
+    "email": "litu@gmail.com",
+    data_nasc: "2009-01-01",
+    turma_id: "2",
+    especialidades_id: ["2", "5"]
+}
+
+### Pegar idade aluno por id
+GET http://localhost:3003/estudante-idade/1
