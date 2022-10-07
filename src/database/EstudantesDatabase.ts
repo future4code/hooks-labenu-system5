@@ -5,15 +5,16 @@ import { BaseDatabase } from "./BaseDatabase";
 export class EstudanteDatabase extends BaseDatabase {
   public async adicionarEstudante(estudante: Estudante) {
     try {
-      await BaseDatabase.connection("Estudante").insert({
-        id: estudante.getId(),
-        nome: estudante.getNome(),
-        email: estudante.getEmail(),
-        data_nasc: estudante.getDataNasc(),
-        turma_id: estudante.getIdTurma(),
-      });
+        await BaseDatabase.connection("Estudante")
+          .insert({
+            id: estudante.getId(),
+            nome: estudante.getNome(),
+            email: estudante.getEmail(),
+            data_nasc: estudante.getDataNasc(),
+            turma_id: estudante.getIdTurma()
+          })
     } catch (error: any) {
-      throw new Error("Erro inesperado");
+        throw new Error("Erro inesperado, verificar informações passadas")
     }
   }
 

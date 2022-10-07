@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-
 import { Docente } from "../models/Docente";
 import { DocenteDatabase } from "../database/DocentesDatabase";
 import { DocenteEspecialidade } from "../models/DocenteEspecialidade";
