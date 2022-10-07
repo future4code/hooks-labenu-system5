@@ -182,7 +182,7 @@ _Qualquer dúvida ou sugestão, chama no contatinho!_
 
   <tr>  
     <td align="center"><a href="https://github.com/elisabetealves"><img style="border-radius: 50%;" src="https://unavatar.now.sh/github/elisabetealves" width="100px;" alt=""/><br /><sub><b>Elisabete Alves</b></sub></a><br /><a href="https://www.linkedin.com/in/elisabete-a-santos/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> </td>  
-    <td align="center"><a href="https://github.com/natashagomesr"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/98358842?v=4" width="100px;" alt=""/><br /><sub><b>Natasha Gomes</b></sub></a><br /> <a href="https://www.linkedin.com"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a></td>    
+    <td align="center"><a href="https://github.com/natashagomesr"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/98358842?v=4" width="100px;" alt=""/><br /><sub><b>Natasha Gomes</b></sub></a><br /> <a href="https://www.linkedin.com/in/natasha-gomes-r/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a></td>    
   </tr>
   
 </table>
@@ -196,3 +196,4 @@ _Qualquer dúvida ou sugestão, chama no contatinho!_
 <br>
 
 ### Feito com 💕 e muita dedicação
+
