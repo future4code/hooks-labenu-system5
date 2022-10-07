@@ -9,7 +9,6 @@ export class TurmaDatabase extends BaseDatabase {
                   id: turma.getId(),
                   nome: turma.getNome(),
                   modulo: turma.getModulo()
-
               })
       } catch (error: any) {
           throw new Error("Erro inesperado")
