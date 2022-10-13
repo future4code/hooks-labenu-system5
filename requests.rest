@@ -1,0 +1,99 @@
+### Endpoint de teste
+GET http://localhost:3003/ping
+
+### Criar Turma
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{
+    "nome": "Joy",
+    "modulo": "8"
+}
+
+### Pegar todas as Turmas
+GET http://localhost:3003/all/turmas
+
+### Mudar turma de módulo
+PUT http://localhost:3003/turma/1664998876770 
+Content-Type: application/json
+
+{
+"modulo": "2"
+}
+
+### Criar Estudante
+POST http://localhost:3003/estudante 
+Content-Type: application/json
+
+{
+    "nome": "Maria", 
+    "email": "maria@gmail.com", 
+    "data_nasc": "1997-05-02", 
+    "turma_id": "1665136533852"
+}
+
+### 
+PUT http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "nome": "Victor",
+    "email": "victor@gmail.com",
+    "data_nasc": "2000-01-01",
+    "turma_id": "1",
+    "hobbies_id": ["1"]
+}
+
+
+### Buscar todos os Estudantes
+GET http://localhost:3003/all/estudantes
+
+### Pegar idade aluno por id
+GET http://localhost:3003/estudante-idade/1
+
+### Buscar estudante por nome
+GET http://localhost:3003/estudante?nome=Ravenna
+
+###  Mudar estudante de turma
+PUT http://localhost:3003/estudante/001 
+Content-Type: application/json
+
+{
+"turma_id": "1664998876770"
+}
+
+### Criar Docente
+POST http://localhost:3003/docente 
+Content-Type: application/json
+
+{
+    "nome": "Chijo", 
+    "email": "lele@gmail.com", 
+    "data_nasc": "1990-12-01", 
+    "turma_id": "001"
+}
+
+### Buscar todos os Docentes
+GET http://localhost:3003/all/docentes
+
+
+PUT http://localhost:3003/especialidade
+Content-Type: application/json
+
+{
+    "nome": "Lito",
+    "email": "litu@gmail.com",
+    "data_nasc": "2009-01-01",
+    "turma_id": "2",
+    "especialidades_id": ["2", "5"]
+}
+
+### Mudar docente de turma
+PUT http://localhost:3003/docente/001 
+Content-Type: application/json
+
+{
+"turma_id": "1664998876770"
+}
+
+
